@@ -1,0 +1,234 @@
+.movies {
+  background: #FCFCFC;
+}
+
+.sort-options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:  0.5rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+
+.sort-options label {
+  font-weight: 600;
+  color: black;
+}
+
+.sort-options select,
+.sort-order select {
+  font-size: 1rem;
+  padding: 0.25rem 0.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+
+.sort-options select:focus,
+.sort-order select:focus {
+  outline: none;
+}
+
+.sort-order {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.movies-list {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  max-width: 80vw;
+  line-height: 1rem;
+  padding: 1rem 3rem;
+  list-style: none;
+}
+
+.movie-item {
+  width: 25%;
+  padding: 10px;
+}
+
+.movie-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  height: 30rem;
+  padding: 10px;
+  border: 1px solid #CCCCCC;
+  border-radius: 10px;
+  gap: .5rem;
+}
+
+.movie-container img {
+  width: 100%;
+  max-width: 200px;
+  height: 65%;
+  margin: 0 auto 10px auto;
+  border-radius: 10px;
+}
+
+.movie-container h3 {
+  font-size: medium;
+}
+
+span {
+  font-weight: 500;
+  font-size: small;
+}
+
+p {
+  font-size: small;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  background: #ffffff;
+  padding-bottom: 2rem;
+}
+
+.pagination button {
+  width: 2rem;
+  padding: 5px 10px;
+  margin: 0 3px;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #716beacc;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  border-color: #716beacc;
+  transform: scale(1.1);
+}
+
+button.paginationArrow {
+  display: flex;
+  align-items: center;
+  border-color: #716beacc;
+}
+
+.pagination button.active,
+button.paginationArrow:hover {
+  background-color: #716bea;
+  border-color: #716beacc;
+  color: white;
+  transition: .7s;
+}
+
+/* dark mode */
+.dark-mode {
+  color: #f5f5f5;
+}
+
+.pagination.dark-mode {
+  background-color: black;
+}
+
+.sort-options label.dark-mode {
+  color: #FCFCFC;
+}
+
+.sort-options select.dark-mode {
+  background-color: black;
+  color: #FCFCFC;
+}
+
+.pagination button.dark-mode {
+  border-color: #716bea;
+}
+
+.pagination button.active.dark-mode,
+button.paginationArrow:hover.dark-mode {
+  color: black;
+  font-weight: bolder;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.search-input {
+  width: 300px;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-button {
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #716bea;
+  color: white;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #594fad;
+}
+
+
+@media  only screen and (max-width: 1200px) {
+  .movies-list {
+    min-width: 100vw;
+    padding: 2rem;
+  }
+}
+
+@media  only screen and (max-width: 900px) {
+  .movie-container img {
+    height: 55%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .movie-container img {
+    height: 65%;
+  }
+
+  .sort-options label {
+    margin-right: .3rem;
+    font-size: .9rem;
+  }
+
+  select {
+    max-width: 10rem;
+  }
+
+  .sort-order {
+    margin-left: 2rem;
+  }
+
+  .movie-item {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  select {
+    max-width: 5rem;
+  }
+
+  .movie-item {
+    width: 100%;
+  }
+
+  .movie-container {
+    height: 25rem;
+  }
+
+  .movie-container img {
+    height: 60%;
+  }
+}

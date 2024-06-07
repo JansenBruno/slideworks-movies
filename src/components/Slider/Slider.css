@@ -1,0 +1,123 @@
+.nuka-carousel {
+  max-height: 25rem;
+  max-width: 80vw;
+}
+
+.nuka-carousel img {
+  height: auto;
+  width: 100%;
+  object-fit: contain;
+  transform: translateY(-10%);
+  filter: brightness(50%);
+}
+
+
+.nuka-carousel-button {
+  height: 40px;
+  width: 40px;
+  font-size: 20px;
+  background: transparent !important;
+  color: white !important;
+  border: none;
+  cursor: pointer;
+}
+
+button.nuka-carousel-paging-dots {
+  padding: .2rem;
+}
+
+button:focus, button:focus-visible {
+  outline: none !important;
+}
+
+.nuka-carousel-prevButton {
+  margin-left: 4rem;
+}
+
+.nuka-carousel-nextButton {
+  margin-right: 4rem;
+}
+
+circle {
+  fill: white;
+}
+
+.slider-caption {
+  margin: auto;
+  color: white;
+  line-height: 2.5rem;
+}
+
+.slider-caption h2 {
+  max-width: 60%;
+}
+
+.slider-caption span {
+  margin-left: .5rem;
+}
+
+@media only screen and (min-width: 1680px) {
+  .nuka-carousel {
+    max-height: 30rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .slider-caption {
+    margin-top:  4.5rem;
+    margin-right: 10rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .nuka-carousel {
+    max-height: 19rem;
+    min-width: 100vw;
+  }
+}
+
+@media  only screen and (max-width: 900px) {
+  .movie-container img {
+    height: 55%;
+  }
+}
+
+@media only screen and (max-width: 756px) {
+  .nuka-carousel {
+    max-height: 15rem;
+    min-width: 100vw;
+  }
+
+  .nuka-carousel-prevButton,
+  .nuka-carousel-nextButton {
+    display: none;
+  }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+  .slider-caption {
+    padding: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .slider-caption #crew {
+    display: block;
+    margin-top: .7rem;
+  }
+
+  .slider-caption h2 {
+    font-size: x-large;
+    justify-content: center;
+    max-width: 100%;
+    margin: .6rem auto;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .nuka-carousel {
+    max-height: 15rem;
+    min-width: 100vw;
+  }
+}
