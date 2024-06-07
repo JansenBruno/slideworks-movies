@@ -24,12 +24,7 @@
 ># sua_caminho\slideworks-movies>
 >$ npm run dev
 >```
->
->Assim que receber a mensagem:
->
-> ```bash
 
->
 >  ➜  Local:   http://localhost:$$$$/
 >  ➜  Network: use --host to expose
 >
